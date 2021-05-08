@@ -51,8 +51,14 @@ class _HomepageState extends State<Homepage> {
                 ),
                 Card(
                   child: ListTile(
+                    leading: Container(
+                      width: 40,
+                      height: 40,
+                      child: Icon(Icons.ac_unit),
+                    ),
                     title: Text('Temperature', style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      color: Colors.redAccent,
                     ),),
                     subtitle: Text(snapshot.data.main.temp.toString()+' Kelvin',
                       style: TextStyle(
@@ -63,8 +69,14 @@ class _HomepageState extends State<Homepage> {
                 ),
                 Card(
                   child: ListTile(
+                    leading: Container(
+                      width: 40,
+                      height: 40,
+                      child: Icon(Icons.whatshot),
+                    ),
                     title: Text('Humidity', style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      color: Colors.lightBlue,
                     ),),
                     subtitle: Text(snapshot.data.main.humidity.toString()+' %',
                       style: TextStyle(
@@ -75,8 +87,14 @@ class _HomepageState extends State<Homepage> {
                 ),
                 Card(
                   child: ListTile(
+                    leading: Container(
+                      width: 40,
+                      height: 40,
+                      child: Icon(Icons.airplanemode_on),
+                    ),
                     title: Text('Wind Speed', style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      color: Colors.teal,
                     ),),
                     subtitle: Text(snapshot.data.wind.speed.toString()+' m/s',
                       style: TextStyle(
